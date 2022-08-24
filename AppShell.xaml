@@ -6,9 +6,15 @@
     xmlns:local="clr-namespace:HelloMaui"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Notes"
+            ContentTemplate="{DataTemplate local:NotePage}"
+            Icon="icon_notes" />
 
+        <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate local:AboutPage}"
+            Icon="icon_about" />
+    </TabBar>
 </Shell>
